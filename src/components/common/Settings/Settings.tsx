@@ -6,18 +6,18 @@ import {FrameType} from "../../../types";
 import {phoneStore} from "../../../stores/phoneStore";
 
 const browserSettings = {
-    showWindowControls: 'Window Controls',
-    showAddressBar: 'URL Bar',
-    showAddressBarUrl: 'URL Text',
-    showNavigationButtons: 'Nav Buttons',
-    showSettingsButton: 'Settings Button',
-    showBoxShadow: 'Show Shadow',
+    showWindowControls: '窗口控制',
+    showAddressBar: 'URL地址栏',
+    showAddressBarUrl: 'URL文本',
+    showNavigationButtons: '导航按钮',
+    showSettingsButton: '设置按钮',
+    showBoxShadow: '显示阴影',
 }
 
 const phoneSettings = {
-    showSpeaker: 'Show Speaker',
-    showCamera: 'Show Camera',
-    showVolumeRocker: 'Show Volume Rocker',
+    showSpeaker: '展示听筒',
+    showCamera: '展示摄像头',
+    showVolumeRocker: '展示音量键',
 }
 
 interface settingToggleProps {

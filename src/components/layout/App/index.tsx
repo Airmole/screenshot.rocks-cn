@@ -19,7 +19,7 @@ export const App = view(() => {
     useEffect(() => checkForImageFromLocalstorageUrlOrPaste(), [])
 
     const handleFrameTypeChange = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
-        app.frameType = ((e.target as HTMLElement).innerText as FrameType);
+        app.frameType = (((e.target as HTMLElement).innerText === '浏览器'? 'Browser':'Phone') as FrameType);
     };
 
     return (
@@ -35,18 +35,18 @@ export const App = view(() => {
                                         key={type}
                                         onClick={handleFrameTypeChange}
                                         className={(app.frameType === type ? 'active' : '') + ' btn btn-success'}>
-                                        {type}
+                                        {(type === 'Browser' ? '浏览器' : '手机')}
                                     </button>
                                 )
                             })}
                         </div>
                     </div>
                     <ThemeSelector/>
-                    <h3 className="mt-3">Canvas</h3>
+                    <h3 className="mt-3">画布</h3>
                     <CanvasSettings/>
-                    <h3 className="mt-3">Background</h3>
+                    <h3 className="mt-3">背景</h3>
                     <BackgroundSettings/>
-                    <h3 className="mt-3">Settings</h3>
+                    <h3 className="mt-3">设置</h3>
                     <Settings/>
                 </div>
                 <div className="footer">

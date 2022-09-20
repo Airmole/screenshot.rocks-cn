@@ -28,7 +28,9 @@ export const BrowserExtensionBanner = () => {
     const {link, name} = (availableExtension as any)[browser];
     return (
         <div className={styles()}>
-            <span role="img">🚀</span> Try our <a target="_blank" href={link}><span>{name}</span></a> for one-click screenshot mockups from any page
+            <span role="img">🚀</span> 试试 <a target="_blank" href={link}><span>{name}</span></a> 官方扩展，任意页面生成截图样机模型
+
+
         </div>
     );
 }

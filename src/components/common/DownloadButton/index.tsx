@@ -60,11 +60,11 @@ export const DownloadButtons = view(() => {
             </div>
             <button disabled={!app.imageData || app.isDownloadMode} onClick={handleImageDownload}
                     className="btn btn-success w-100 btn-s">
-                {app.isDownloadMode ? 'Downloading...' : `Download ${imageFormat.toUpperCase()}`}
+                {app.isDownloadMode ? '下载中...' : `下载 ${imageFormat.toUpperCase()}`}
             </button>
             {canCopyToClipboard() && <button disabled={!app.imageData || app.isDownloadMode} onClick={handleImageCopy}
                                              className="btn btn-success w-100 btn-s mt-2 mb-2">
-                {app.isDownloadMode ? 'Copying...' : `Copy to Clipboard`}
+                {app.isDownloadMode ? '复制中...' : `复制到粘贴板`}
             </button>}
             {app.imageData &&
             <button

@@ -67,11 +67,11 @@ export const ImageSelector = view(() => {
                 <input {...getInputProps()} />
                 {
                     isDragActive ?
-                        <div className="drop-here">Drop your image here...</div> :
+                        <div className="drop-here">拖拽图片到此...</div> :
                         <div>
                             <div className="dropzone">
-                                <p><b>Drop</b>, <b>paste</b> or <b>click</b> here to upload an image...</p>
-                                <p>or enter a URL</p>
+                                <p><b>拖拽</b>, <b>粘贴</b> 或 <b>点击</b> 此处上传图像...</p>
+                                <p>或输入 URL</p>
                             </div>
                         </div>
                 }

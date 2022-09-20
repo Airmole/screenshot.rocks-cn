@@ -8,7 +8,7 @@ export const CanvasSettings = view(() => {
             <div className="row">
                 <div className="col">
                     <label htmlFor="horizontalPadding" className="form-label">
-                        Horizontal
+                        水平长度
                     </label>
                 </div>
                 <div className="col">
@@ -26,7 +26,7 @@ export const CanvasSettings = view(() => {
             <div className="row">
                 <div className="col">
                     <label htmlFor="verticalPadding" className="form-label">
-                        Vertical
+                        竖直高度
                     </label>
                 </div>
                 <div className="col">

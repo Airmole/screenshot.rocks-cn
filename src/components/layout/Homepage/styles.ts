@@ -108,7 +108,7 @@ export const styles = () => {
        .footer {
         display: flex;
         text-align: center;
-        max-width: 500px;
+        max-width: 720px;
         margin: 20px auto;
         align-items: center;
         place-content: space-evenly;

@@ -18,7 +18,7 @@ export const PhoneThemeSelector = view(() => {
     };
 
     const phoneStyleMap = {
-        frameColor: 'Frame Color',
+        frameColor: '外壳颜色',
     }
 
     return (
@@ -59,7 +59,7 @@ export const PhoneThemeSelector = view(() => {
                 })}
             </div>
             <button onClick={handleCustomThemeClick} className="btn btn-sm btn-link text-white w-100">
-                or <span>{phoneStore.settings.activeTheme !== PhoneThemes.Custom ? 'Choose a Color' : 'Choose Style'}</span>
+                <span>{phoneStore.settings.activeTheme !== PhoneThemes.Custom ? '选择颜色' : '选择样式'}</span>
             </button>
         </div>
     );

@@ -10,10 +10,10 @@ export enum FrameType {
 }
 
 export enum CanvasBackgroundTypes {
-    Image = 'Image',
-    Solid = 'Solid',
-    Gradient = 'Gradient',
-    None = 'None',
+    Image = '图片',
+    Solid = '纯色',
+    Gradient = '渐变',
+    None = '透明',
 }
 
 export enum Browsers {

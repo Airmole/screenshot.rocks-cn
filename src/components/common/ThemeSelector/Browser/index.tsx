@@ -18,12 +18,12 @@ export const BrowserThemeSelector = view(() => {
     };
 
     const browserStyleMap = {
-        browserChromeBgColor: 'Browser Background',
-        browserControlsBgColor: 'Controls Background',
-        browserControlsTextColor: 'Controls Text',
-        closeButtonColor: 'Close Button',
-        maximizeButtonColor: 'Maximize Button',
-        minimizeButtonColor: 'Minimize Button'
+        browserChromeBgColor: '浏览器背景',
+        browserControlsBgColor: '控制操作背景',
+        browserControlsTextColor: '控制操作文字',
+        closeButtonColor: '关闭按钮',
+        maximizeButtonColor: '窗口最大化按钮',
+        minimizeButtonColor: '窗口最小化按钮'
     }
 
     return (
@@ -67,7 +67,7 @@ export const BrowserThemeSelector = view(() => {
                 <div className="row">
                     <div className="col">
                         <label htmlFor="horizontalPadding" className="form-label">
-                            Border Radius
+                            圆角
                         </label>
                     </div>
                     <div className="col">
@@ -87,7 +87,7 @@ export const BrowserThemeSelector = view(() => {
                 </div>
             </div>
             <button onClick={handleCustomThemeClick} className="btn btn-sm btn-link text-white w-100">
-                or <span>{browserStore.settings.activeTheme !== BrowserThemes.Custom ? 'Style Your Own' : 'Choose Style'}</span>
+                <span>{browserStore.settings.activeTheme !== BrowserThemes.Custom ? '自定义样式' : '选择样式'}</span>
             </button>
         </div>
     );
