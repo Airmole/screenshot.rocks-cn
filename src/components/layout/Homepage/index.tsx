@@ -25,13 +25,13 @@ export const Homepage = view(() => {
     const handleShareClick = (provider: SocialProviders) => {
         switch (provider) {
             case SocialProviders.WhatsApp:
-                window.location.href = 'whatsapp://send?text=%E8%BD%BB%E6%9D%BE%E5%88%9B%E5%BB%BA%E7%BE%8E%E8%A7%82%E7%9A%84%E6%89%8B%E6%9C%BA%2F%E6%B5%8F%E8%A7%88%E5%99%A8%E6%88%AA%E5%9B%BE%2Bhttps%3A%2F%2Fscreenshot.rocks';
+                window.location.href = 'whatsapp://send?text=%E8%BD%BB%E6%9D%BE%E5%88%9B%E5%BB%BA%E7%BE%8E%E8%A7%82%E7%9A%84%E6%B5%8F%E8%A7%88%E5%99%A8%2F%E6%89%8B%E6%9C%BA%E6%88%AA%E5%9B%BE+https%3A%2F%2Fscreenshot.airmole.cn';
                 break
             case SocialProviders.Facebook:
-                window.open('https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fscreenshot.rocks');
+                window.open('https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fscreenshot.airmole.cn');
                 break;
             case SocialProviders.Twitter:
-                window.open('https://twitter.com/intent/tweet?url=https%3A%2F%2Fscreenshot.rocks%20%26text%3D%E8%BD%BB%E6%9D%BE%E5%88%9B%E5%BB%BA%E7%BE%8E%E8%A7%82%E7%9A%84%E6%B5%8F%E8%A7%88%E5%99%A8%2F%E6%89%8B%E6%9C%BA%E6%88%AA%E5%9B%BE');
+                window.open('https://twitter.com/intent/tweet?url=https%3A%2F%2Fscreenshot.airmole.cn&text=%E8%BD%BB%E6%9D%BE%E5%88%9B%E5%BB%BA%E7%BE%8E%E8%A7%82%E7%9A%84%E6%B5%8F%E8%A7%88%E5%99%A8%2F%E6%89%8B%E6%9C%BA%E6%88%AA%E5%9B%BE');
                 break;
         }
     }
