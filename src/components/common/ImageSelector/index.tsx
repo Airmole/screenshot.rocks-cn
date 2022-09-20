@@ -44,7 +44,7 @@ export const ImageSelector = view(() => {
         }
 
         setUrlLoading(true);
-        fetch(`${process.env.REACT_APP_SCREENSHOT_API}?url=${urlValue}${enableMobileScreenshot ? '&mobile=1' : ''}`)
+        fetch(`https://2wg20nrbv4.execute-api.eu-west-1.amazonaws.com/default/screenshot?url=${urlValue}${enableMobileScreenshot ? '&mobile=1' : ''}`)
             .then(response => response.json())
             .then(data => app.setImageData(`data:image/png;base64, ${data.imageBase64}`))
             .catch(() => {
@@ -100,8 +100,8 @@ export const ImageSelector = view(() => {
                     {urlLoading ? 'Working...' : 'Go'}
                 </button>
                 <div className="invalid-feedback">
-                    {urlIsInvalid && 'Whoops! Looks like you entered an invalid URL.'}
-                    {requestFailed && 'Something has gone wrong. Please check your URL is valid and try again.'}
+                    {urlIsInvalid && '您输入的图片URL链接似乎无效，或无法读取到.'}
+                    {requestFailed && 'URL获取图片异常，请检查图片链接，若确认图片链接正常，可能是本程序出错。'}
                 </div>
             </div>
         </div>
